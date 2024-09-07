@@ -22,6 +22,6 @@ docker compose up
 * AlarmServer
 * Viseron - http://localhost:2222
 * Management App - http://localhost:2121
-** Cameras - http://localhost:2121/cameras
+* Cameras - http://localhost:2121/cameras
 
 Visit http://localhost:2121 in a browser to access the stack.

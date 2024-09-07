@@ -1,5 +1,9 @@
 # DataMinder Technical Manual
 
+## Directory Structure
+
+Documentation about the [directories and key files](/README_DIR_STRUCTURE.md).
+
 ## Docker 
 
 **PRODUCTION**
@@ -16,6 +20,12 @@ docker compose -f ./docker/dev-compose.yaml
 
 Using this on the productin server will use the PRODUCTION services!
 This should only be run on your local development workstation, it will create the services required.
+
+### Docker compose secrets
+
+The project uses [Docker compose secrets](https://docs.docker.com/compose/use-secrets/).
+
+Example secrets are provided, please create your own, unique and secure secrets!
 
 ## MQTT - Messaging
 
