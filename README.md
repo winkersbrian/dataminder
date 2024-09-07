@@ -1,30 +1,19 @@
 # DataMinder - Mind your data
 
-A toolset to help collect and organize your importnat information, without dependence any particular service.
+A toolset to help collect and organize your important information, without dependence any particular external service.
 
 ## Directory Structure
 
-### /apps
+Additional info in ./README_DIR_STRUCTURE.md
 
-End user applications
+## Prerquisites
 
-## /packages
+An up to date Docker environment supporting `docker compose` and `docker run`.
 
-Packaged software we create, primarily NPM
+## Running the Local Stack
 
-## /scripts
+```sh
+docker compose up
+```
 
-Scripts used to simplify managing the projects
-
-## /schema
-
-Common object definitions shared by the apps, packages and services.
-
-## /services
-
-API and other services created for the projects
-
-## /tests
-
-E2E tests of apps, packages and services working together.
-Individual packages, apps and services will have their unit own, usually in a top level `tests` directory.
+Visit http://localhost:2121 in a browser.
