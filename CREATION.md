@@ -77,6 +77,41 @@ Create VitePress projects in `/docs/`.
 pnpm add -D vitepress
 ```
 
+```sh
+pnpm vitepress init
+```
 
+```sh
+┌  Welcome to VitePress!
+│
+◆  Where should VitePress initialize the config?
+│  ./docs
+│
+◇  Site title:
+│  DataMinder
+│
+◇  Site description:
+│  Mind your data LOCALLY and sync to the cloud.
+│
+◇  Theme:
+│  Default Theme + Customization
+│
+◇  Use TypeScript for config and theme files?
+│  Yes
+│
+◇  Add VitePress npm scripts to package.json?
+│  Yes
+│
+└  Done! Now run pnpm run docs:dev and start writing.
+
+Tips:
+- Make sure to add  docs/.vitepress/dist and  docs/.vitepress/cache to your .gitignore file.
+- Since you've chosen to customize the theme, you should also explicitly install vue as a dev dependency.
+```
+
+```sh
+echo -e "docs/.vitepress/dist" >> .gitignore
+echo -e "docs/.vitepress/cache" >> .gitignore
+```
 
 

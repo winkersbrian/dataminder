@@ -4,7 +4,7 @@ A toolset to help collect and organize your important information, without depen
 
 ## Directory Structure
 
-Additional info in ./README_DIR_STRUCTURE.md
+Additional info in ./docs/README_DIR_STRUCTURE.md
 
 ## Prerquisites
 
