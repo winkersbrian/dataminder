@@ -114,4 +114,15 @@ echo -e "docs/.vitepress/dist" >> .gitignore
 echo -e "docs/.vitepress/cache" >> .gitignore
 ```
 
+### Runnings Vitepress Docs Web UI Locally
+
+```sh
+pnpm run docs:dev
+```
+
+-or-
+
+```sh
+pnpm run docs:dev
+```
 
