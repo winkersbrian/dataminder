@@ -15,7 +15,7 @@ docker compose up
 **LOCAL DEVELOPMENT**
 
 ```sh
-docker compose -f ./docker/dev-compose.yaml 
+docker compose -f ./docker/local-dev-compose.yaml 
 ```
 
 Using this on the productin server will use the PRODUCTION services!

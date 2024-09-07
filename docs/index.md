@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "DataMinder"
   text: "Mind your data LOCALLY and sync to the cloud."
-  tagline: Avoid "BIG TECH" lockin
+  tagline: Avoid "BIG TECH" lock-in
   actions:
     - theme: brand
       text: User Manual
@@ -23,7 +23,7 @@ features:
   - title: Manage Data Locally
     details: Manage data in IndexedDB and OPFS, then sync securely to a local API server.
   - title: No Cloud Lockin
-    details: Sync data with ANY cloud provider, and wasily change that provider at any time.
+    details: Sync data with ANY cloud provider, and easily change that provider at any time.
   - title: Local and Remote Alarms
     details: Push alarms to mobile devices and remote services.
 ---
