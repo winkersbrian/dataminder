@@ -1,6 +1,6 @@
 # DataMinder - Mind your data
 
-A toolset to help collect and organize your importnat information, without dependence any particular service.
+A toolset to help collect and organize your important information, without dependence any particular service.
 
 ## Directory Structure
 
