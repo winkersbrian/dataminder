@@ -37,6 +37,8 @@ Run via root Docker compose.
 
 Configured in: `services/mqtt`
 
+[Additional Info](./services/mqtt/)
+
 ## AlarmServer - Security camera shim service
 
 ### Running AlarmServer

@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "dev:up": "docker compose -f ./local-dev-compose.yaml up",
+    "dev:down": "docker compose -f ./local-dev-compose.yaml down"
   },
   "keywords": [],
   "author": "Brian Winkers",

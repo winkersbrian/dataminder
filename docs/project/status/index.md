@@ -3,6 +3,7 @@
 - [x] Repo - https://github.com/winkersbrian/dataminder
 - [x] Docs - https://dataminder.netlify.app/
 - [ ] MQTT - 
+- [ ] DevSMTP - 
 - [ ] AlarmManager - 
 - [ ] Viseron (local internal) -
 - [ ] Nginx reverse proxy - 

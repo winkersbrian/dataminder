@@ -18,6 +18,7 @@ export default defineConfig({
           { text: 'User Manual', link: '/user-manual' },
           { text: 'Tech Manual', link: '/technical-manual' },
           { text: 'Tech Stack', link: '/stack' },
+          { text: 'Project Roadmap', link: '/project/status' },
         ]
       },
       {
