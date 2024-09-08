@@ -3,3 +3,5 @@ docs/.vitepress/dist
 docs/.vitepress/cache
 services/mqtt/data/mosquitto.db
 services/mqtt/config/pwfile
+services/viseron/data
+services/viseron/config/.viseron/webserver

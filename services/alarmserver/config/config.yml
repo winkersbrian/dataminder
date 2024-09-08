@@ -3,7 +3,7 @@ debug: false
 hikvision:
   enabled: true
   cams:
-    dumpsiteMensRoom-H:
+    dumpsiteMensRoomH:
       address: 192.168.205.50
       https: false
       username: admin
@@ -18,20 +18,21 @@ hisilicon:
 dahua:
   enabled: true
   cams:
-    dumpsiteMensRoom-D:
+    dumpsiteMensRoomD:
       address: 192.168.205.50
       https: false
       username: admin
       password: 123456
       # USE channel FOR NVRs TO SELECT THE CAMERA, IF NOT USED - DELETE OR COMMENT
-      channel: 0
+      # channel: 0
       # IF ALL EVENTS ARE NEEDED - DELETE OR COMMENT FOLLOWING LINE
-      events: VideoMotion,CrossLineDetection,AlarmLocal,VideoLoss,VideoBlind
+      # events: VideoMotion,CrossLineDetection,AlarmLocal,VideoLoss,VideoBlind
+      rawTcp: false
 
 ftp:
   enabled: true
   port: 21
-  password: "root"
+  password: "revresmrala"
   allowFiles: true
   rootPath: "./ftp"
 

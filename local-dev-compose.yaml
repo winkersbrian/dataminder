@@ -1,6 +1,6 @@
 services:
 
-  # mqtt5 eclipse-mosquitto
+  # mqtt5 eclipse-mosquitto - Nessage bus
   mqtt5:
     image: eclipse-mosquitto
     container_name: mqtt5
@@ -13,8 +13,10 @@ services:
       - ./services/mqtt/log:/mosquitto/log:rw
     restart: unless-stopped
 
-  smtp4dev:
+  # SMTP4Dev - Development only mail server
+  smtp4dev: 
     image: rnwood/smtp4dev:v3
+    container_name: smtp4dev
     restart: unless-stopped
     ports:
       # Change the number before : to the port the web interface should be accessible on
@@ -39,8 +41,33 @@ services:
 
       #Specifies the server hostname. Used in auto-generated TLS certificate if enabled.
       - ServerOptions__HostName=smtp4dev
+
+  # Security camera alarm server, proxies alarms to MQTT
+  # alarmserver:
+  #   image: toxuin/alarmserver
+  #   container_name: alarmserver
+  #   ports:
+  #     - "21:21" # receive FTP alarms
+  #     # - "15002:15002" # Not needed if you don't need HiSilicon server.
+  #   volumes:
+  #     - type: bind
+  #       source: ${PWD}/services/alarmserver/config/config.yml
+  #       target: /config.yml
+  #     - ./services/alarmserver/data:/ftp # Store alerts to be sent via FTP
+  #   restart: unless-stopped
+
+  viseron:
+    image: roflcoopter/viseron:latest
+    container_name: viseron
+    volumes:
+      - ./services/viseron/data:/recordings
+      - ./services/viseron/config:/config
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - 8888:8888
+
 volumes:
-  # volumes for mapping MQTT data,config and log
+  # volumes for mapping MQTT data, config and log
   config:
   data:
   log:
