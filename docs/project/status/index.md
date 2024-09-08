@@ -2,9 +2,9 @@
 
 - [x] Repo - https://github.com/winkersbrian/dataminder
 - [x] Docs - https://dataminder.netlify.app/
-- [ ] MQTT - 
-- [ ] DevSMTP - 
-- [ ] AlarmManager - 
+- [x] MQTT - https://dataminder.netlify.app/technical-manual/services/mqtt/
+- [x] SMTP4Dev - 
+- [ ] AlarmServer - 
 - [ ] Viseron (local internal) -
 - [ ] Nginx reverse proxy - 
 - [ ] Viseron (proxied to web)
