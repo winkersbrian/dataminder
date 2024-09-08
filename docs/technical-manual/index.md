@@ -43,7 +43,7 @@ A fake SMTP server for development environments. It alows us to test our alert e
 
 This maps the various odd ways security cameras send alarms to MQTT messages.
 
-[Additional Info](./services/alarmserver)
+[Additional Info](./services/alarmserver/)
 
 ## Viseron - Security camera NVR
 
