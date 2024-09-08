@@ -29,8 +29,6 @@ Example secrets are provided, please create your own, unique and secure secrets!
 
 ## MQTT - Messaging
 
-### Running Mosquitto MQTT
-
 Provides a messaging bus between platform components.
 
 [Additional Info](./services/mqtt/)

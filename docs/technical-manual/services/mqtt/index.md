@@ -1,5 +1,7 @@
 # Mosquitto MQTT
 
+## Running Mosquitto MQTT
+
 Run via root Docker compose.
 
 ## Configuring Mosquitto MQTT
