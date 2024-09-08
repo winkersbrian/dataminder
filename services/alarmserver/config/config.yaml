@@ -1,0 +1,65 @@
+debug: false
+
+hikvision:
+  enabled: true
+  cams:
+    dumpsiteMensRoom-H:
+      address: 192.168.205.50
+      https: false
+      username: admin
+      password: 123456
+       # USE RAW TCP IF HTTP STREAMING DOES NOT WORK
+      rawTcp: false
+
+hisilicon:
+  enabled: false
+  port: 15002
+
+dahua:
+  enabled: true
+  cams:
+    dumpsiteMensRoom-D:
+      address: 192.168.205.50
+      https: false
+      username: admin
+      password: 123456
+      # USE channel FOR NVRs TO SELECT THE CAMERA, IF NOT USED - DELETE OR COMMENT
+      channel: 0
+      # IF ALL EVENTS ARE NEEDED - DELETE OR COMMENT FOLLOWING LINE
+      events: VideoMotion,CrossLineDetection,AlarmLocal,VideoLoss,VideoBlind
+
+ftp:
+  enabled: true
+  port: 21
+  password: "root"
+  allowFiles: true
+  rootPath: "./ftp"
+
+mqtt:
+  enabled: true
+  username: alarmserver
+  password: "revresmrala"
+  port: 1883
+  server: "mqtt5"
+  topicroot: camera-alerts
+
+webhooks:
+  enabled: false
+  # items:
+  #   - url: "https://webhook.site/52d57401-0ea3-4e43-80a0-ceb02fba2d1e"
+  #     method: "GET" # DEFAULTS TO POST
+  #     headers:
+  #       - "X-Beep: boop"
+
+  #     # YOU CAN USE TEMPLATE VARIABLES TO FORM THE URL: .Camera, .Event, .Extra
+  #   - url: "https://example.com/webhooks/{{ .Camera }}/events/{{ .Event }}"
+  #     # YOU CAN ALSO USE TEMPLATE VARIABLES IN THE PAYLOAD BODY!
+  #     # BELOW EXAMPLE DELIVERS RAW EVENT TO THE ENDPOINT
+  #     bodyTemplate: '{{ .Extra }}'
+
+  #   - url: "https://api.telegram.org/bot121212121:token/sendMessage?chat_id=43434343434&text=hello"
+
+  # # SIMPLE SHORTHAND FORM FOR THE SAME STUFF AS ABOVE, WILL PERFORM A POST TO EACH URL
+  # urls:
+  #   - "https://example.com/camera-webhooks"
+  #   - "https://example.com/another-endpoint"

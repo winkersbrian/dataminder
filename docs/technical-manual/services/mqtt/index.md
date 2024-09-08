@@ -1,5 +1,13 @@
 # Mosquitto MQTT
 
+Run via root Docker compose.
+
+## Configuring Mosquitto MQTT
+
+Configured in: `services/mqtt`
+
+## Install
+
 Originally installed using [community docs](https://github.com/sukesh-ak/setup-mosquitto-with-docker).
 
 The files go in `/services/mqtt` vs. in a root `/mqtt` directory.

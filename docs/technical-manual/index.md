@@ -31,23 +31,21 @@ Example secrets are provided, please create your own, unique and secure secrets!
 
 ### Running Mosquitto MQTT
 
-Run via root Docker compose.
-
-### Configuring Mosquitto MQTT
-
-Configured in: `services/mqtt`
+Provides a messaging bus between platform components.
 
 [Additional Info](./services/mqtt/)
 
+## SMTP4Dev
+
+A fake SMTP server for development environments. It alows us to test our alert emails.
+
+[Additional Info](./services/smtp4dev/)
+
 ## AlarmServer - Security camera shim service
 
-### Running AlarmServer
+This maps the various odd ways security cameras send alarms to MQTT messages.
 
-Run via root Docker compose.
-
-### Configuring AlarmServer
-
-Configured in: `services/alarmserver`
+[Additional Info](./services/alarmserver)
 
 ## Viseron - Security camera NVR
 
